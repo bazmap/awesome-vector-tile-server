@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Carte MapLibre avec Inspection et Contrôles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/maplibre-gl@3.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; padding: 0; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+    .map-overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: sans-serif;
+      font-size: 13px;
+      z-index: 1;
+      max-height: 90%;
+      overflow-y: auto;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
+    .layer-toggle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .layer-toggle input {
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <div class="map-overlay" id="layer-control">
+    <strong>Contrôle des couches</strong>
+    <div id="layers"></div>
+    <hr />
+    <label>
+      <input type="checkbox" id="toggle-inspect" />
+      Activer l'inspecteur
+    </label>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@3.4.0/dist/maplibre-gl.js"></script>
+  <script src="https://unpkg.com/maplibre-gl-inspect@1.5.0/dist/maplibre-gl-inspect.min.js"></script>
+
+  <script>
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: 'https://demotiles.maplibre.org/style.json',
+      center: [2.35, 48.85],
+      zoom: 12
+    });
+
+    map.addControl(new maplibregl.NavigationControl());
+
+    const inspectControl = new MaplibreInspect({
+      showInspectMap: true,
+      showMapPopup: true,
+      showMapInspectButton: false // on utilise notre propre bouton
+    });
+
+    // Création des contrôles après chargement du style
+    map.on('style.load', () => {
+      map.addControl(inspectControl, 'top-right');
+
+      const layers = map.getStyle().layers;
+      const layersContainer = document.getElementById('layers');
+
+      layers.forEach(layer => {
+        if (!layer.id || !layer.layout || layer.layout.visibility === 'none') return;
+
+        const id = layer.id;
+        const layerDiv = document.createElement('div');
+        layerDiv.className = 'layer-toggle';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = map.getLayoutProperty(id, 'visibility') !== 'none';
+        checkbox.onchange = () => {
+          const visibility = checkbox.checked ? 'visible' : 'none';
+          map.setLayoutProperty(id, 'visibility', visibility);
+        };
+
+        const label = document.createElement('label');
+        label.textContent = id;
+
+        layerDiv.appendChild(checkbox);
+        layerDiv.appendChild(label);
+        layersContainer.appendChild(layerDiv);
+      });
+
+      // Contrôle de l'inspecteur
+      const toggleInspect = document.getElementById('toggle-inspect');
+      toggleInspect.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          inspectControl.activate();
+        } else {
+          inspectControl.deactivate();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

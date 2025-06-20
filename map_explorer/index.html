@@ -1,0 +1,35 @@
+<head>
+	<meta charset="utf-8">
+	<title>VectorTile Explorer</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+	<script src="https://unpkg.com/maplibre-gl@^5.6.0/dist/maplibre-gl.js"></script>
+	<link href="https://unpkg.com/maplibre-gl@^5.6.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+	<script src='https://unpkg.com/@maplibre/maplibre-gl-inspect@latest/dist/maplibre-gl-inspect.js'></script>
+	<link href='https://unpkg.com/@maplibre/maplibre-gl-inspect@latest/dist/maplibre-gl-inspect.css' rel='stylesheet' />
+
+	<link href='style.css' rel='stylesheet' />
+
+</head>
+
+<body style="margin:0;height:100%;">
+	<div id="form">
+		<select id="layer">
+			<option value="osm">OpenStreetMap</option>
+			<option value="stamen">Stamen Terrain</option>
+			<option value="carto">CartoDB Positron</option>
+			<option value="custom">Custom URL</option>
+			<optgroup label="German Cars">
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+			</optgroup>
+		</select>
+		<input type="text" id="url" placeholder="Enter Vector Tile URL" value="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
+		<button id="load">Load</button>
+	</div>
+	
+	<div id="map" style="margin:0;height:100%;"></div>
+
+	<script src='map.js'></script>
+</body>

@@ -1,0 +1,47 @@
+<head>
+	<meta charset="utf-8">
+	<title>VectorTile Explorer</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!--<link rel="icon" type="image/png" href="/assets/images/versatiles-logo.png"> -->
+
+	<script src="https://unpkg.com/maplibre-gl@^5.6.0/dist/maplibre-gl.js"></script>
+	<link href="https://unpkg.com/maplibre-gl@^5.6.0/dist/maplibre-gl.css" rel="stylesheet" />
+
+	<script src="/assets/lib/style-selector/style-selector.js"></script>
+	<link href="/assets/lib/style-selector/style-selector.css" rel="stylesheet">
+
+	<script src='https://unpkg.com/@maplibre/maplibre-gl-inspect@latest/dist/maplibre-gl-inspect.js'></script>
+	<link href='https://unpkg.com/@maplibre/maplibre-gl-inspect@latest/dist/maplibre-gl-inspect.css' rel='stylesheet' />
+
+	<link href="https://unpkg.com/maplibre-gl@^5.6.0/dist/maplibre-gl.css" rel="stylesheet" />
+</head>
+
+<body style="margin:0;height:100%;">
+	<a href="https://versatiles.org" style="position:absolute;top:1em;left:1em;z-index:1">
+		<img src="/assets/images/versatiles-logo.png" alt="VersaTiles" width="32">
+	</a>
+	<div id="map" class="maplibregl-compact maplibregl-map" style="position:absolute;top:0;bottom:0;width:100%"><div class="maplibregl-canvas-container maplibregl-interactive maplibregl-touch-drag-pan maplibregl-touch-zoom-rotate"><canvas class="maplibregl-canvas" tabindex="0" aria-label="Map" role="region" width="1762" height="1397" style="width: 1410px; height: 1118px;"></canvas></div><div class="maplibregl-control-container"><div class="maplibregl-ctrl-top-left "></div><div class="maplibregl-ctrl-top-right "><div class="maplibregl-ctrl maplibregl-ctrl-group"><button class="maplibregl-ctrl-zoom-in" type="button" title="Zoom in" aria-label="Zoom in" aria-disabled="false"><span class="maplibregl-ctrl-icon" aria-hidden="true"></span></button><button class="maplibregl-ctrl-zoom-out" type="button" title="Zoom out" aria-label="Zoom out" aria-disabled="false"><span class="maplibregl-ctrl-icon" aria-hidden="true"></span></button><button class="maplibregl-ctrl-compass" type="button" title="Reset bearing to north" aria-label="Reset bearing to north"><span class="maplibregl-ctrl-icon" aria-hidden="true" style="transform: rotate(0deg);"></span></button></div><div class="maplibregl-ctrl maplibregl-ctrl-group"><button class="maplibregl-ctrl-icon maplibregl-ctrl-inspect" type="button" title="Toggle Inspect" aria-label="Toggle Inspect"></button></div><div><div class="maplibregl-ctrl maplibregl-ctrl-group"><button type="button" class="maplibregl-ctrl-icon maplibregl-style-switcher"></button></div><div class="maplibregl-ctrl maplibregl-ctrl-group" style="display: none;"><div class="maplibregl-style-list"><button type="button" class="active">colorful</button><button type="button">eclipse</button><button type="button">graybeard</button><button type="button">neutrino</button></div></div></div></div><div class="maplibregl-ctrl-bottom-left "></div><div class="maplibregl-ctrl-bottom-right "><details class="maplibregl-ctrl maplibregl-ctrl-attrib maplibregl-compact" open=""><summary class="maplibregl-ctrl-attrib-button" title="Toggle attribution" aria-label="Toggle attribution"></summary><div class="maplibregl-ctrl-attrib-inner"><a href="https://maplibre.org/" target="_blank">MapLibre</a> | © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div></details></div></div></div>
+	<script>
+		maplibregl.setRTLTextPlugin('/assets/lib/mapbox-gl-rtl-text/mapbox-gl-rtl-text.js', true);
+
+		const map = new maplibregl.Map({
+			container: 'map',
+			bounds: [-180, -80, 180, 80],
+			zoom: 5,
+			maxZoom: 20,
+			hash: true,
+			maxPitch: 0,
+			dragRotate: false,
+		});
+
+		map.addControl(new maplibregl.NavigationControl(), 'top-right');
+		map.addControl(new MaplibreInspect({ sources: { 'versatiles-shortbread': ['addresses', 'boundaries', 'boundary_labels', 'bridges', 'buildings', 'dam_lines', 'dam_polygons', 'ferries', 'land', 'ocean', 'pier_lines', 'pier_polygons', 'place_labels', 'pois', 'public_transport', 'sites', 'street_labels', 'street_polygons', 'streets', 'water_lines', 'water_polygons'], } }));
+		map.addControl(new StyleSelector.Control({ tiles: ['tiles/osm/{z}/{x}/{y}'] }));
+
+		// collapse attribution control
+		document.getElementsByClassName('maplibregl-ctrl-attrib')[0].classList.remove('maplibregl-compact-show');
+
+	</script>
+
+
+</body>
