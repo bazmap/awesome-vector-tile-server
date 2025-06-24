@@ -1,7 +1,44 @@
-# A curated list of vector tile servers
+<div align="center">
+<h1>A curated list of vector tile servers</h1>
+  <p>
+    An awesome list of vector tile servers
+    <img src="https://img.shields.io/badge/awesome-grey?logo=awesomelists&logoColor=fff&labelColor=0099FF" alt="contributors" />
+  </p>
+</div>
+ 
+[![Button Icon]][Link] 
 
-## Introduction to vector tiles
-### Format
+[Button Icon]: https://img.shields.io/badge/👉_The_curated_list-EF2D5E?style=for-the-badge
+[Link]: #the-curated-list 'The curated list'
+
+
+
+# 📔 Table of Contents
+
+- [📔 Table of Contents](#-table-of-contents)
+- [🌟 About the project](#-about-the-project)
+- [🗺️ Introduction to vector tiles](#️-introduction-to-vector-tiles)
+  - [✏️ Format](#️-format)
+  - [🗃️ Schema](#️-schema)
+  - [🖌️ Style](#️-style)
+  - [🧰 Tools](#-tools)
+- [👋 How to contribute](#-how-to-contribute)
+- [📝The curated list](#the-curated-list)
+
+
+
+# 🌟 About the project
+It is not really easy to find vector tile servers despite the increasing popularity of this format in webGIS.
+You will find here a curated list of open‑source and commercial vector tile servers.
+
+This list aims to help developers, GIS professionals, and map enthusiasts discover, compare, and evaluate available solutions for serving vector data.
+
+Contributions are welcome — if you have a favorite vector tile server that isn’t listed, feel free to open an issue or a pull request!
+
+
+
+# 🗺️ Introduction to vector tiles
+## ✏️ Format
 Vector tiles can be found with different formats :
 - [Mapbox Vector Tiles (.mvt)](https://github.com/mapbox/vector-tile-spec) : oftently used with the Protocolbuffer Binary Format (.pbf) extension
 - MBTiles : a SQLight container storing tiled map data encoded in the Mapbox Vector Tiles (MVT) format
@@ -11,20 +48,22 @@ Vector tiles can be found with different formats :
 - GeoJSON
 - TopoJSON
 
-### Schema
+
+## 🗃️ Schema
 Tiles data are structured using a specific schema (which layers, which attributes...). It is possible to use it's own schema but some have been standardized (for Open Street Map data sources) :
 - [OpenMapTiles schema](https://openmaptiles.org/schema/)
 - [Shortbread vector schema](https://shortbread-tiles.org)
 - [Protomap schema](https://docs.protomaps.com/basemaps/layers)
 - [Tilezen schema](https://tilezen.readthedocs.io/en/latest/layers/)
 
-### Style
+
+## 🖌️ Style
 Using vector tiles into web maps requires to define how to style the data. This is a JSON file that contain the tile layers sources and their visual appearances. Depending on the map rendering technology, different style specifications exists :
 - [Mapbox Style Specification](https://docs.mapbox.com/style-spec/guides/) for Mapbox GL JS
 - [MapLibre Style Specification](https://maplibre.org/maplibre-style-spec/) for Maplibre GL JS
 
 
-### Tools
+## 🧰 Tools
 Here is some tools that can be used with verctor tiles :
 - To diplay what your tiles contain : [vector-inspector by Stevage](https://stevage.github.io/vector-inspector/#?url=&loc=0.8/0/0)
 - To generate MapLibre Styles : [Maputnik](https://maputnik.github.io/editor/#1.07/0/0)
@@ -35,7 +74,9 @@ Here is some tools that can be used with verctor tiles :
 - [Mapbox awesome-vector-tile](https://github.com/mapbox/awesome-vector-tiles)
 - [Awesome-maplibre](https://github.com/maplibre/awesome-maplibre)
 
-## How to contribute
+
+
+# 👋 How to contribute
 You have found new servers ? You spotted a mistake ? Feel free to contribute by forking this repo and submitting your PR.
 The curated list is generated upon the vector-tile-server-list.json file. It is structurated this way :  
 An array of objects containing these properties :
@@ -50,7 +91,7 @@ An array of objects containing these properties :
   - `metadata-url` (text) : url where to find any additionnal informations for the style
 - `coverage` (text) : the coverage of the tileset (can be "world" or a country name, not a bounding box)
 - `provider` (text) : the provider's name
-- `attribution` (text) : the attribution in HTML format. Pay attention that some tileset need multiples attributions. Some tileset includes their own attributions.
+- `attribution` (text) : the attribution in HTML format. Pay attention that some tileset need multiples attributions, others include their own attributions. Double quotes need to be escaped ;-)
 
 Here is an exemple :
 ```json
@@ -71,12 +112,14 @@ Here is an exemple :
     ],
     "coverage":"World",
     "provider":"My tileset corporation",
-    "attribution":"<a href="https://www.tileset.xyz/about/">Tileset</a>"
+    "attribution":"<a href=\"https://www.tileset.xyz/about/\">Tileset</a>"
   }
 ]
 ```
 
-## The curated list
+
+
+# 📝The curated list
 You will find here the curated list of vector tile servers.
 
 
