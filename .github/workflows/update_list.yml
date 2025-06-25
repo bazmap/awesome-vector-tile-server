@@ -1,4 +1,4 @@
-name: 🔄 Update changelog
+name: 🔄 Update vectore tile server list
 run-name: ${{ github.workflow }} - ${{ github.actor }}
 
 # Déclenchement lors d'un push sur la branche master qui modifie vector-tile-server-list.json
@@ -9,6 +9,8 @@ on:
       - 'master'
     paths:
       - 'vector-tile-server-list.json'
+  schedule:
+    - cron: "0 4 * * *"
 
 jobs:
   build:

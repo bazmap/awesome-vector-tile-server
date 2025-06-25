@@ -8,8 +8,6 @@ import time
 def validate_urls(data):
     if isinstance(data, dict):
 
-        print("Checking URLs")
-
         for key, value in data.items():
             # URL only in objets stored in a key finishing with "-url"
             if key.endswith("-url") and isinstance(value, dict):
@@ -72,6 +70,7 @@ if __name__ == "__main__":
     with open(list_file, "r", encoding='utf-8') as f:
         data = json.load(f)
 
+    print("Checking URLs")
     updated_data = validate_urls(data)
 
     with open(list_file, "w", encoding='utf-8') as f:
