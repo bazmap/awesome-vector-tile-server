@@ -215,14 +215,6 @@ For each link provided, a simple test is done every 24h to check if the link is 
             <td>World</td>
         </tr>
         <tr>
-            <td>IFREMER (data.gouv.fr)</td>
-            <td>ifremer-atlasdce</td>
-            <td><br /><a href='https://openmaptiles.data.gouv.fr/' title='https://openmaptiles.data.gouv.fr/ (url is active)' target='_blank'>Metadata 🟢</a><br />Attribution : <code>data.gouv.fr</code></td>
-            <td><a href='https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf' title='Tile server url (url is active)' target='_blank'>https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf🟢</a></td>
-            <td><ul></ul></td>
-            <td>France métropolitaine et DOM</td>
-        </tr>
-        <tr>
             <td>IGN</td>
             <td>Admin Express</td>
             <td>Tuiles vectorielles administratives de l'IGN<br /><a href='https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles' title='https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles (url is active)' target='_blank'>Metadata 🟢</a><br />Attribution : <code>IGN-F/Geoportail</code></td>
@@ -271,6 +263,14 @@ For each link provided, a simple test is done every 24h to check if the link is 
             <td>France métropolitaine et DOM</td>
         </tr>
         <tr>
+            <td>Ifremer  (data.gouv.fr)</td>
+            <td>ifremer-atlasdce</td>
+            <td><br /><a href='https://openmaptiles.data.gouv.fr/' title='https://openmaptiles.data.gouv.fr/ (url is active)' target='_blank'>Metadata 🟢</a><br />Attribution : <code>data.gouv.fr</code></td>
+            <td><a href='https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf' title='Tile server url (url is active)' target='_blank'>https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf🟢</a></td>
+            <td><ul></ul></td>
+            <td>France métropolitaine et DOM</td>
+        </tr>
+        <tr>
             <td>OpenFreeMap</td>
             <td>OpenFreeMap</td>
             <td>OpenFreeMap lets you display custom maps on your website and apps for free<br /><a href='https://openfreemap.org/' title='https://openfreemap.org/ (url is active)' target='_blank'>Metadata 🟢</a><br />Attribution : <code><a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> <a href="https://www.openmaptiles.org/" target="_blank">© OpenMapTiles</a> Data from <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></code></td>
@@ -297,9 +297,9 @@ For each link provided, a simple test is done every 24h to check if the link is 
         <tr>
             <td>Tuiles en Liberté</td>
             <td>OpenStreetMap</td>
-            <td>Des tuiles OpenStreetMap vectorielles libres, gratuites, sans inscription et anonymes<br /><a href='https://tuiles.enliberte.fr/' title='https://tuiles.enliberte.fr/ (url is not active)' target='_blank'>Metadata 🔴</a><br />Attribution : <code>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</code></td>
+            <td>Des tuiles OpenStreetMap vectorielles libres, gratuites, sans inscription et anonymes<br /><a href='https://tuiles.enliberte.fr/' title='https://tuiles.enliberte.fr/ (url is active)' target='_blank'>Metadata 🟢</a><br />Attribution : <code>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</code></td>
             <td><a href='https://osm.nbg1.your-objectstorage.com/planet.pmtiles' title='Tile server url (url is active)' target='_blank'>https://osm.nbg1.your-objectstorage.com/planet.pmtiles🟢</a></td>
-            <td><ul><li><a href='https://tuiles.enliberte.fr/styles/bright.json' title='Tile server url (url is not active)' target='_blank'>Bright🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/basic.json' title='Tile server url (url is not active)' target='_blank'>Basic🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/positron.json' title='Tile server url (url is not active)' target='_blank'>Positron🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/liberty.json' title='Tile server url (url is not active)' target='_blank'>Liberty🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/dark-matter.json' title='Tile server url (url is not active)' target='_blank'>Dark Matter🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/maptiler-3d.json' title='Tile server url (url is not active)' target='_blank'>Maptiler 3D🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/toner.json' title='Tile server url (url is not active)' target='_blank'>Toner🔴</a></li><li><a href='https://tuiles.enliberte.fr/styles/fiord-color.json' title='Tile server url (url is not active)' target='_blank'>Fiord color🔴</a></li></ul></td>
+            <td><ul><li><a href='https://tuiles.enliberte.fr/styles/bright.json' title='Tile server url (url is active)' target='_blank'>Bright🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/basic.json' title='Tile server url (url is active)' target='_blank'>Basic🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/positron.json' title='Tile server url (url is active)' target='_blank'>Positron🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/liberty.json' title='Tile server url (url is active)' target='_blank'>Liberty🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/dark-matter.json' title='Tile server url (url is active)' target='_blank'>Dark Matter🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/maptiler-3d.json' title='Tile server url (url is active)' target='_blank'>Maptiler 3D🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/toner.json' title='Tile server url (url is active)' target='_blank'>Toner🟢</a></li><li><a href='https://tuiles.enliberte.fr/styles/fiord-color.json' title='Tile server url (url is active)' target='_blank'>Fiord color🟢</a></li></ul></td>
             <td>World</td>
         </tr>
         <tr>

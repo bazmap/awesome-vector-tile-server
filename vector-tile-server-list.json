@@ -710,7 +710,7 @@
     },
     "metadata-url": {
       "url": "https://tuiles.enliberte.fr/",
-      "active": false
+      "active": true
     },
     "schema": "OpenMapTiles",
     "styles": [
@@ -718,56 +718,56 @@
         "name": "Bright",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/bright.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Basic",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/basic.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Positron",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/positron.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Liberty",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/liberty.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Dark Matter",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/dark-matter.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Maptiler 3D",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/maptiler-3d.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Toner",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/toner.json",
-          "active": false
+          "active": true
         }
       },
       {
         "name": "Fiord color",
         "style-url": {
           "url": "https://tuiles.enliberte.fr/styles/fiord-color.json",
-          "active": false
+          "active": true
         }
       }
     ],
