@@ -7,6 +7,9 @@ import time
 
 def validate_urls(data):
     if isinstance(data, dict):
+
+        print("Checking URLs")
+
         for key, value in data.items():
             # URL only in objets stored in a key finishing with "-url"
             if key.endswith("-url") and isinstance(value, dict):
@@ -17,17 +20,20 @@ def validate_urls(data):
                     
                     # For URL with https://abc.xyz/{z}/{x}/{y}.yxz format : need to strip the end part
                     url = url.split("{z}/")[0]
+                    print("    ", url)
 
                     try:
                         # Using the HEAD method to avoid downloading large files
                         response = requests.head(url, timeout=5)
                         value["active"] = True
+                        print("      => active")
 
                     except requests.RequestException:
                         try:
                             # Some URL needs to be requested with the GET method
                             response = requests.get(url, stream=True, timeout=5)
                             value["active"] = True
+                            print("      => active")
 
                             # Stopping the downloading after 5 second to avoid downloading large files
                             start = time.time()
@@ -37,6 +43,7 @@ def validate_urls(data):
 
                         except requests.RequestException:
                             value["active"] = False
+                            print("      => not active")
 
             else:
                 validate_urls(value)

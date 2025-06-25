@@ -132,14 +132,9 @@ def modify_readme(readme_file, table_list):
 
 if __name__ == "__main__":
 
-    list_file = ".\\vector-tile-server-list.json"
-    readme_file = ".\\README.md"
-
-    
-
     # File
     list_file = "vector-tile-server-list.json"
-    readme_file = "README.md"
+    readme_file = "readme.md"
 
     # Current script place
     current_directory = os.path.dirname(os.path.abspath(__file__))
