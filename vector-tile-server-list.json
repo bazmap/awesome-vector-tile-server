@@ -512,7 +512,7 @@
     "schema": "Specific",
     "styles": [],
     "coverage": "France métropolitaine et DOM",
-    "provider": "data.gouv.fr",
+    "provider": "IFREMER (data.gouv.fr)",
     "attribution": "data.gouv.fr"
   },
   {
@@ -529,7 +529,7 @@
     "schema": "Specific",
     "styles": [],
     "coverage": "France métropolitaine et DOM",
-    "provider": "© DINUM (data.gouv.fr)",
+    "provider": "DINUM (data.gouv.fr)",
     "attribution": "© DINUM (data.gouv.fr)"
   },
   {

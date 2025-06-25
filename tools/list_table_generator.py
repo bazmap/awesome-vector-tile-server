@@ -1,3 +1,4 @@
+import os
 import json
 import re
 
@@ -6,15 +7,18 @@ def create_html_table(tile_server_data):
     html_table = """<table>
     <thead>
         <tr>
+            <th>Provider</th>
             <th>Name</th>
             <th>Description</th>
             <th>URL</th>
             <th>Styles</th>
             <th>Coverage</th>
-            <th>Provider</th>
         </tr>
     </thead>
     <tbody>\n"""
+
+
+    tile_server_data.sort(key=lambda item: (item["provider"], item["name"]))
 
 
     for tile_server in tile_server_data:
@@ -26,6 +30,9 @@ def create_html_table(tile_server_data):
             or tile_server["metadata-url"]["url"] == ""
         ):
             continue
+
+        # Provider
+        srv_provider = tile_server.get("provider", "N/A")
 
         # Name
         srv_name = tile_server.get("name", "N/A")
@@ -50,7 +57,7 @@ def create_html_table(tile_server_data):
             srv_desc += "</a>"
 
         if tile_server["attribution"] is not None:
-            srv_desc += "<br />Attribution : <code>" + tile_server.get("attribution") + "<code>"
+            srv_desc += "<br />Attribution : <code>" + tile_server.get("attribution") + "</code>"
 
         # URL
         srv_url = ""
@@ -97,24 +104,20 @@ def create_html_table(tile_server_data):
         # Coverage
         srv_coverage = tile_server.get("coverage", "N/A")
 
-        # Provider
-        srv_provider = tile_server.get("provider", "N/A")
-
 
 
         # Generate table row
         html_table += "        <tr>\n"
+        html_table += f"            <td>{srv_provider}</td>\n"
         html_table += f"            <td>{srv_name}</td>\n"
         html_table += f"            <td>{srv_desc}</td>\n"
         html_table += f"            <td>{srv_url}</td>\n"
         html_table += f"            <td>{srv_styles}</td>\n"
         html_table += f"            <td>{srv_coverage}</td>\n"
-        html_table += f"            <td>{srv_provider}</td>\n"
         html_table += "        </tr>\n"
 
 
     html_table += "    </tbody>\n</table>"
-    print(html_table)
 
     return html_table
 
@@ -131,6 +134,21 @@ if __name__ == "__main__":
 
     list_file = ".\\vector-tile-server-list.json"
     readme_file = ".\\README.md"
+
+    
+
+    # File
+    list_file = "vector-tile-server-list.json"
+    readme_file = "README.md"
+
+    # Current script place
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+
+    # Path to the file
+    list_file = os.path.join(current_directory, '../', list_file)
+    readme_file = os.path.join(current_directory, '../', readme_file)
+
+
 
     with open(list_file, "r", encoding='utf-8') as f:
         tile_server_data = json.load(f)

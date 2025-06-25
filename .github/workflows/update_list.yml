@@ -1,0 +1,51 @@
+name: 🔄 Update changelog
+run-name: ${{ github.workflow }} - ${{ github.actor }}
+
+# Déclenchement lors d'un push sur la branche master qui modifie vector-tile-server-list.json
+# Déclenchement toutes les 24h également pour checker tous les liens
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'vector-tile-server-list.json'
+
+jobs:
+  build:
+    name: 🛠️ Update vectore tile server list
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+
+      - name: 🖥️ Check URLs
+        run: python "tools/url_validator.py"
+
+
+      - name: 🖥️ Generate new table
+        run: python "tools/list_table_generator.py"
+
+
+      - name: 💾 Commit new changelog and push files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add "readme.md" "vector-tile-server-list.json"
+          git status
+          git commit --verbose -m "Update readme.md and vector-tile-server-list.json [skip ci]"
+          git status
+          git fetch origin
+          git rebase --strategy-option=theirs origin/master --verbose
+          git push --verbose

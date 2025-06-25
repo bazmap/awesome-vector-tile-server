@@ -1,3 +1,4 @@
+import os
 import json
 import requests
 import time
@@ -50,7 +51,16 @@ def validate_urls(data):
 
 if __name__ == "__main__":
 
-    list_file = ".\\vector-tile-server-list.json"
+    # File
+    list_file = "vector-tile-server-list.json"
+
+    # Current script place
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+
+    # Path to the file
+    list_file = os.path.join(current_directory, '../', list_file)
+
+
 
     with open(list_file, "r", encoding='utf-8') as f:
         data = json.load(f)
