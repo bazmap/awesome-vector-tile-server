@@ -1,370 +1,824 @@
 [
   {
-    "name":"Admin Express",
-    "description":"Tuiles vectorielles administratives de l'IGN",
-    "url":"https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Thème par défaut", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json"}
-    ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"IGN",
-    "attribution":"IGN-F/Geoportail"
-  },
-  {
-    "name":"BD TOPO®",
-    "description":"Tuiles vectorielles de la Base de données Topographiques (BD TOPO®) de l'IGN",
-    "url":"https://data.geopf.fr/tms/1.0.0/BDTOPO/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Classique", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"},
-      {"style":"Bâtiments", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"},
-      {"style":"Hydrographie", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"},
-      {"style":"Réseau routier", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"},
-      {"style":"Age du bâti", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"},
-      {"style":"Bâtiments étages", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"}
-    ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"IGN",
-    "attribution":"IGN-F/Geoportail"
-  },
-  {
-    "name":"Courbes de niveau",
-    "description":"Tuiles vectorielles des courbes de niveau de l'IGN",
-    "url":"https://data.geopf.fr/tms/1.0.0/ISOHYPSE/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Multicolor", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"},
-      {"style":"Marron", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"},
-      {"style":"Orange", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"}
-    ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"IGN",
-    "attribution":"IGN-F/Geoportail"
-  },
-  {
-    "name":"OCS GE",
-    "description":"Tuiles vectorielles de l'OCS GE (Occupation du Sol)",
-    "url":"https://data.geopf.fr/tms/1.0.0/OCSGE_2016/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Couverture", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"},
-      {"style":"Usage", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"}
-    ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"IGN",
-    "attribution":"IGN-F/Geoportail"
-  },
-  {
-    "name":"Parcellaire Express (PCI)",
-    "description":"Tuiles vectorielles du parcellaire cadastral de l'IGN",
-    "url":"https://data.geopf.fr/tms/1.0.0/PCI/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Noir et blanc", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"},
-      {"style":"Thème par défaut", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"}
-    ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"IGN",
-    "attribution":"IGN-F/Geoportail"
-  },
-  {
-    "name":"Plan IGN",
-    "description":"Tuiles vectorielles du plan IGN",
-    "url":"https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Standard", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"},
-      {"style":"Atténué", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"},
-      {"style":"Gris", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"},
-      {"style":"Sans toponymes", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"},
-      {"style":"Toponymes", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"},
-      {"style":"Accentué", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"},
-      {"style":"Classique", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"},
-      {"style":"Epuré", "url":"https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"},
+    "name": "Admin Express",
+    "description": "Tuiles vectorielles administratives de l'IGN",
+    "server-url": {
+      "url": "https://data.geopf.fr/tms/1.0.0/ADMIN_EXPRESS/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
       {
-        "style":"Mono red", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_red.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono green", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_green.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono blue", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_blue.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono purple", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_purple.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono orange", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_orange.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono yellow", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_yellow.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono black", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_black.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mono gray", 
-        "url":"https://viglino.github.io/geoservice-style/mono/mono_gray.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"ERP", 
-        "url":"https://viglino.github.io/geoservice-style/erp/erp.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"MapArt", 
-        "url":"https://viglino.github.io/geoservice-style/mapart/mapart.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Cyanotype", 
-        "url":"https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Cassini map", 
-        "url":"https://viglino.github.io/geoservice-style/cassini/cassini.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Retro map", 
-        "url":"https://viglino.github.io/geoservice-style/retro/retro.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Guide book", 
-        "url":"https://viglino.github.io/geoservice-style/guidebook/guidebook.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Coffee", 
-        "url":"https://viglino.github.io/geoservice-style/coffee/coffee.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Mondrian", 
-        "url":"https://viglino.github.io/geoservice-style/mondrian/mondrian.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Roads", 
-        "url":"https://viglino.github.io/geoservice-style/roads/roads.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Halloween", 
-        "url":"https://viglino.github.io/geoservice-style/halloween/halloween.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
-      },
-      {
-        "style":"Christmas", 
-        "url":"https://viglino.github.io/geoservice-style/christmas/christmas.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
+        "name": "Thème par défaut",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json",
+          "active": true
+        }
       }
     ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"IGN",
-    "attribution":"IGN-F/Geoportail"
+    "coverage": "France métropolitaine et DOM",
+    "provider": "IGN",
+    "attribution": "IGN-F/Geoportail"
   },
   {
-    "name":"OpenFreeMap",
-    "description":"OpenFreeMap lets you display custom maps on your website and apps for free",
-    "url":"https://tiles.openfreemap.org/planet",
-    "metadata-url":"https://openfreemap.org/",
-    "schema":"OpenMapTiles",
-    "flavors":[
-      {"style":"Positron", "url":"https://tiles.openfreemap.org/styles/positron"},
-      {"style":"Bright", "url":"https://tiles.openfreemap.org/styles/bright"},
-      {"style":"Liberty", "url":"https://tiles.openfreemap.org/styles/liberty"},
-      {"style":"3D", "url":"https://tiles.openfreemap.org/styles/liberty"},
+    "name": "BD TOPO®",
+    "description": "Tuiles vectorielles de la Base de données Topographiques (BD TOPO®) de l'IGN",
+    "server-url": {
+      "url": "https://data.geopf.fr/tms/1.0.0/BDTOPO/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
       {
-        "style":"Cassini", 
-        "url":"https://viglino.github.io/geoservice-style/openfreecassini/openfreecassini.json",
-        "metadata-url":"https://github.com/Viglino/geoservice-style#readme"
+        "name": "Classique",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Bâtiments",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Hydrographie",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Réseau routier",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Age du bâti",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Bâtiments étages",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json",
+          "active": true
+        }
       }
     ],
-    "coverage":"World",
-    "provider":"OpenFreeMap",
-    "attribution":"<a href=\"https://openfreemap.org\" target=\"_blank\">OpenFreeMap</a> <a href=\"https://www.openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a> Data from <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>"
+    "coverage": "France métropolitaine et DOM",
+    "provider": "IGN",
+    "attribution": "IGN-F/Geoportail"
   },
   {
-    "name":"Cadastre France",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/cadastre/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
+    "name": "Courbes de niveau",
+    "description": "Tuiles vectorielles des courbes de niveau de l'IGN",
+    "server-url": {
+      "url": "https://data.geopf.fr/tms/1.0.0/ISOHYPSE/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Multicolor",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Marron",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Orange",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json",
+          "active": true
+        }
+      }
     ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"DINUM (data.gouv.fr)",
-    "attribution":"<a href=\"https://cadastre.data.gouv.fr/\">&copy; DINUM (data.gouv.fr)</a>"
+    "coverage": "France métropolitaine et DOM",
+    "provider": "IGN",
+    "attribution": "IGN-F/Geoportail"
   },
   {
-    "name":"Découpage administratif - France",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/decoupage-administratif/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
+    "name": "OCS GE",
+    "description": "Tuiles vectorielles de l'OCS GE (Occupation du Sol)",
+    "server-url": {
+      "url": "https://data.geopf.fr/tms/1.0.0/OCSGE_2016/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Couverture",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Usage",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
+          "active": true
+        }
+      }
     ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"DINUM (data.gouv.fr)",
-    "attribution":"© DINUM (data.gouv.fr)"
+    "coverage": "France métropolitaine et DOM",
+    "provider": "IGN",
+    "attribution": "IGN-F/Geoportail"
   },
   {
-    "name":"Cadastre DVF France",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/cadastre-dvf/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
+    "name": "Parcellaire Express (PCI)",
+    "description": "Tuiles vectorielles du parcellaire cadastral de l'IGN",
+    "server-url": {
+      "url": "https://data.geopf.fr/tms/1.0.0/PCI/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Noir et blanc",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Thème par défaut",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json",
+          "active": true
+        }
+      }
     ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"DINUM (data.gouv.fr)",
-    "attribution":"<a href=\"https://cadastre.data.gouv.fr/\">&copy; DINUM (data.gouv.fr)</a>"
+    "coverage": "France métropolitaine et DOM",
+    "provider": "IGN",
+    "attribution": "IGN-F/Geoportail"
   },
   {
-    "name":"ifremer-atlasdce",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
+    "name": "Plan IGN",
+    "description": "Tuiles vectorielles du plan IGN",
+    "server-url": {
+      "url": "https://data.geopf.fr/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://geoservices.ign.fr/documentation/services/api-et-services-ogc/tuiles-vectorielles-tmswmts/styles",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Standard",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Atténué",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Gris",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Sans toponymes",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Toponymes",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Accentué",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Classique",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Epuré",
+        "style-url": {
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono red",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_red.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono green",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_green.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono blue",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_blue.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono purple",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_purple.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono orange",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_orange.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono yellow",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_yellow.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono black",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_black.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mono gray",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mono/mono_gray.json",
+          "active": true
+        }
+      },
+      {
+        "name": "ERP",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/erp/erp.json",
+          "active": true
+        }
+      },
+      {
+        "name": "MapArt",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mapart/mapart.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Cyanotype",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/cyanotype/cyanotype.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Cassini map",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/cassini/cassini.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Retro map",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/retro/retro.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Guide book",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/guidebook/guidebook.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Coffee",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/coffee/coffee.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Mondrian",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/mondrian/mondrian.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Roads",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/roads/roads.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Halloween",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/halloween/halloween.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Christmas",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/christmas/christmas.json",
+          "active": true
+        }
+      }
     ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"data.gouv.fr",
-    "attribution":"data.gouv.fr"
+    "coverage": "France métropolitaine et DOM",
+    "provider": "IGN",
+    "attribution": "IGN-F/Geoportail"
   },
   {
-    "name":"Decoupage administratif 2024 France",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/decoupage-administratif-2024/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
+    "name": "OpenFreeMap",
+    "description": "OpenFreeMap lets you display custom maps on your website and apps for free",
+    "server-url": {
+      "url": "https://tiles.openfreemap.org/planet",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openfreemap.org/",
+      "active": true
+    },
+    "schema": "OpenMapTiles",
+    "styles": [
+      {
+        "name": "Positron",
+        "style-url": {
+          "url": "https://tiles.openfreemap.org/styles/positron",
+          "active": true
+        }
+      },
+      {
+        "name": "Bright",
+        "style-url": {
+          "url": "https://tiles.openfreemap.org/styles/bright",
+          "active": true
+        }
+      },
+      {
+        "name": "Liberty",
+        "style-url": {
+          "url": "https://tiles.openfreemap.org/styles/liberty",
+          "active": true
+        }
+      },
+      {
+        "name": "3D",
+        "style-url": {
+          "url": "https://tiles.openfreemap.org/styles/liberty",
+          "active": true
+        }
+      },
+      {
+        "name": "Cassini",
+        "style-url": {
+          "url": "https://viglino.github.io/geoservice-style/openfreecassini/openfreecassini.json",
+          "active": true
+        }
+      }
     ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"© DINUM (data.gouv.fr)",
-    "attribution":"© DINUM (data.gouv.fr)"
+    "coverage": "World",
+    "provider": "OpenFreeMap",
+    "attribution": "<a href=\"https://openfreemap.org\" target=\"_blank\">OpenFreeMap</a> <a href=\"https://www.openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a> Data from <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap</a>"
   },
   {
-    "name":"Tuiles vectorielles Monde par data.gouv.fr",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/planet-vector/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Bright", "url":"https://openmaptiles.data.gouv.fr/styles/osm-bright/style.json"},
-      {"style":"OSM OpenMapTiles", "url":"https://openmaptiles.data.gouv.fr/styles/osm-openmaptiles/style.json"},
-      {"style":"Positron", "url":"https://openmaptiles.data.gouv.fr/styles/positron/style.json"},
-      {"style":"Dark Matter", "url":"https://openmaptiles.data.gouv.fr/styles/dark-matter/style.json"},
-      {"style":"Toner", "url":"https://openmaptiles.data.gouv.fr/styles/maptiler-toner/style.json"},
-      {"style":"Fiord Color", "url":"https://openmaptiles.data.gouv.fr/styles/fiord-color/style.json"}
-    ],
-    "coverage":"World",
-    "provider":"DINUM (data.gouv.fr)",
-    "attribution":"<a href=https://www.data.gouv.fr/ target=_blank>&copy; DINUM (data.gouv.fr)</a> <a href=https://www.openmaptiles.org/ target=_blank>&copy; OpenMapTiles</a> <a href=https://www.openstreetmap.org/copyright target=_blank>&copy; Contributeurs OpenStreetMap</a>"
+    "name": "Cadastre France",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/cadastre/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [],
+    "coverage": "France métropolitaine et DOM",
+    "provider": "DINUM (data.gouv.fr)",
+    "attribution": "<a href=\"https://cadastre.data.gouv.fr/\">&copy; DINUM (data.gouv.fr)</a>"
   },
   {
-    "name":"Tuiles vectorielles France par DINUM (data.gouv.fr)",
-    "description":"",
-    "url":"https://openmaptiles.data.gouv.fr/data/france-vector/{z}/{x}/{y}.pbf",
-    "metadata-url":"https://openmaptiles.data.gouv.fr/",
-    "schema":"Specific",
-    "flavors":[
-    ],
-    "coverage":"France métropolitaine et DOM",
-    "provider":"DINUM (data.gouv.fr)",
-    "attribution":"<a href=\"https://www.data.gouv.fr/\" target=\"_blank\">&copy; DINUM (data.gouv.fr)</a> <a href=\"https://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; Contributeurs OpenStreetMap</a>"
+    "name": "Découpage administratif - France",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/decoupage-administratif/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [],
+    "coverage": "France métropolitaine et DOM",
+    "provider": "DINUM (data.gouv.fr)",
+    "attribution": "© DINUM (data.gouv.fr)"
   },
   {
-    "name":"Base - Switzerland",
-    "description":"Points d'intérêt sur différents thèmes",
-    "url":"https://vectortiles.geo.admin.ch/tiles/ch.swisstopo.base.vt/v1.0.0/tiles.json",
-    "metadata-url":"https://www.geo.admin.ch/en/vector-tiles-service-available-services-and-data",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Base Map", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap.vt/style.json"},
-      {"style":"Light Base Map", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json"},
-      {"style":"Imagery Base Map", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.imagerybasemap.vt/style.json"},
-      {"style":"Base Map Winter", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap-winter.vt/style.json"}
-    ],
-    "coverage":"Switzerland and Liechtenstein",
-    "provider":"Swisstopo",
-    "attribution":"© swisstopo, © FDFA, © FOEN, © FOCP, © SAC, © Naturefriends Switzerland, © opentransportdata.swiss, © MapTiler, © OpenStreetMap contributors"
+    "name": "Cadastre DVF France",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/cadastre-dvf/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [],
+    "coverage": "France métropolitaine et DOM",
+    "provider": "DINUM (data.gouv.fr)",
+    "attribution": "<a href=\"https://cadastre.data.gouv.fr/\">&copy; DINUM (data.gouv.fr)</a>"
   },
   {
-    "name":"Relief - Switzerland",
-    "description":"Eléments de terrain tirés des cartes nationales",
-    "url":"https://vectortiles.geo.admin.ch/tiles/ch.swisstopo.relief.vt/v1.0.0/tiles.json",
-    "metadata-url":"https://www.geo.admin.ch/en/vector-tiles-service-available-services-and-data",
-    "schema":"Specific",
-    "flavors":[
-      {"style":"Base Map", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap.vt/style.json"},
-      {"style":"Light Base Map", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json"},
-      {"style":"Imagery Base Map", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.imagerybasemap.vt/style.json"},
-      {"style":"Base Map Winter", "url":"https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap-winter.vt/style.json"}
-    ],
-    "coverage":"Switzerland and Liechtenstein",
-    "provider":"Swisstopo",
-    "attribution":"© swisstopo, © FDFA, © FOEN, © FOCP, © SAC, © Naturefriends Switzerland, © opentransportdata.swiss, © MapTiler, © OpenStreetMap contributors"
+    "name": "ifremer-atlasdce",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [],
+    "coverage": "France métropolitaine et DOM",
+    "provider": "data.gouv.fr",
+    "attribution": "data.gouv.fr"
   },
   {
-    "name":"OpenStreetMap",
-    "description":"Des tuiles OpenStreetMap vectorielles libres, gratuites, sans inscription et anonymes",
-    "url":"https://osm.nbg1.your-objectstorage.com/planet.pmtiles",
-    "metadata-url":"https://tuiles.enliberte.fr/",
-    "schema":"OpenMapTiles",
-    "flavors":[
-      {"style":"Bright", "url":"https://tuiles.enliberte.fr/styles/bright.json"},
-      {"style":"Basic", "url":"https://tuiles.enliberte.fr/styles/basic.json"},
-      {"style":"Positron", "url":"https://tuiles.enliberte.fr/styles/positron.json"},
-      {"style":"Liberty", "url":"https://tuiles.enliberte.fr/styles/liberty.json"},
-      {"style":"Dark Matter", "url":"https://tuiles.enliberte.fr/styles/dark-matter.json"},
-      {"style":"Maptiler 3D", "url":"https://tuiles.enliberte.fr/styles/maptiler-3d.json"},
-      {"style":"Toner", "url":"https://tuiles.enliberte.fr/styles/toner.json"},
-      {"style":"Fiord color", "url":"https://tuiles.enliberte.fr/styles/fiord-color.json"}
-    ],
-    "coverage":"World",
-    "provider":"Tuiles en Liberté",
-    "attribution":"© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+    "name": "Decoupage administratif 2024 France",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/decoupage-administratif-2024/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [],
+    "coverage": "France métropolitaine et DOM",
+    "provider": "© DINUM (data.gouv.fr)",
+    "attribution": "© DINUM (data.gouv.fr)"
   },
   {
-    "name":"OpenStreetMap",
-    "description":"Free vector tiles server open for public use",
-    "url":"https://tiles.versatiles.org/tiles/osm/{z}/{x}/{y}",
-    "metadata-url":"https://docs.versatiles.org/guides/use_tiles.versatiles.org.html",
-    "schema":"OpenMapTiles",
-    "flavors":[
-      {"style":"Colorful", "url":"https://tiles.versatiles.org/assets/styles/colorful/style.json"},
-      {"style":"Eclipse", "url":"https://tiles.versatiles.org/assets/styles/eclipse/style.json"},
-      {"style":"Greybeard", "url":"https://tiles.versatiles.org/assets/styles/greybeard/style.json"},
-      {"style":"Neutrino", "url":"https://tiles.versatiles.org/assets/styles/neutrino/style.json"}
+    "name": "Tuiles vectorielles Monde par data.gouv.fr",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/planet-vector/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Bright",
+        "style-url": {
+          "url": "https://openmaptiles.data.gouv.fr/styles/osm-bright/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "OSM OpenMapTiles",
+        "style-url": {
+          "url": "https://openmaptiles.data.gouv.fr/styles/osm-openmaptiles/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Positron",
+        "style-url": {
+          "url": "https://openmaptiles.data.gouv.fr/styles/positron/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Dark Matter",
+        "style-url": {
+          "url": "https://openmaptiles.data.gouv.fr/styles/dark-matter/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Toner",
+        "style-url": {
+          "url": "https://openmaptiles.data.gouv.fr/styles/maptiler-toner/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Fiord Color",
+        "style-url": {
+          "url": "https://openmaptiles.data.gouv.fr/styles/fiord-color/style.json",
+          "active": true
+        }
+      }
     ],
-    "coverage":"World",
-    "provider":"Versatiles",
-    "attribution":"© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+    "coverage": "World",
+    "provider": "DINUM (data.gouv.fr)",
+    "attribution": "<a href=https://www.data.gouv.fr/ target=_blank>&copy; DINUM (data.gouv.fr)</a> <a href=https://www.openmaptiles.org/ target=_blank>&copy; OpenMapTiles</a> <a href=https://www.openstreetmap.org/copyright target=_blank>&copy; Contributeurs OpenStreetMap</a>"
+  },
+  {
+    "name": "Tuiles vectorielles France par DINUM (data.gouv.fr)",
+    "description": "",
+    "server-url": {
+      "url": "https://openmaptiles.data.gouv.fr/data/france-vector/{z}/{x}/{y}.pbf",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://openmaptiles.data.gouv.fr/",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [],
+    "coverage": "France métropolitaine et DOM",
+    "provider": "DINUM (data.gouv.fr)",
+    "attribution": "<a href=\"https://www.data.gouv.fr/\" target=\"_blank\">&copy; DINUM (data.gouv.fr)</a> <a href=\"https://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; Contributeurs OpenStreetMap</a>"
+  },
+  {
+    "name": "Base - Switzerland",
+    "description": "Points d'intérêt sur différents thèmes",
+    "server-url": {
+      "url": "https://vectortiles.geo.admin.ch/tiles/ch.swisstopo.base.vt/v1.0.0/tiles.json",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://www.geo.admin.ch/en/vector-tiles-service-available-services-and-data",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Base Map",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap.vt/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Light Base Map",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Imagery Base Map",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.imagerybasemap.vt/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Base Map Winter",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap-winter.vt/style.json",
+          "active": true
+        }
+      }
+    ],
+    "coverage": "Switzerland and Liechtenstein",
+    "provider": "Swisstopo",
+    "attribution": "© swisstopo, © FDFA, © FOEN, © FOCP, © SAC, © Naturefriends Switzerland, © opentransportdata.swiss, © MapTiler, © OpenStreetMap contributors"
+  },
+  {
+    "name": "Relief - Switzerland",
+    "description": "Eléments de terrain tirés des cartes nationales",
+    "server-url": {
+      "url": "https://vectortiles.geo.admin.ch/tiles/ch.swisstopo.relief.vt/v1.0.0/tiles.json",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://www.geo.admin.ch/en/vector-tiles-service-available-services-and-data",
+      "active": true
+    },
+    "schema": "Specific",
+    "styles": [
+      {
+        "name": "Base Map",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap.vt/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Light Base Map",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Imagery Base Map",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.imagerybasemap.vt/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Base Map Winter",
+        "style-url": {
+          "url": "https://vectortiles.geo.admin.ch/styles/ch.swisstopo.basemap-winter.vt/style.json",
+          "active": true
+        }
+      }
+    ],
+    "coverage": "Switzerland and Liechtenstein",
+    "provider": "Swisstopo",
+    "attribution": "© swisstopo, © FDFA, © FOEN, © FOCP, © SAC, © Naturefriends Switzerland, © opentransportdata.swiss, © MapTiler, © OpenStreetMap contributors"
+  },
+  {
+    "name": "OpenStreetMap",
+    "description": "Des tuiles OpenStreetMap vectorielles libres, gratuites, sans inscription et anonymes",
+    "server-url": {
+      "url": "https://osm.nbg1.your-objectstorage.com/planet.pmtiles",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://tuiles.enliberte.fr/",
+      "active": false
+    },
+    "schema": "OpenMapTiles",
+    "styles": [
+      {
+        "name": "Bright",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/bright.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Basic",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/basic.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Positron",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/positron.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Liberty",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/liberty.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Dark Matter",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/dark-matter.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Maptiler 3D",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/maptiler-3d.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Toner",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/toner.json",
+          "active": false
+        }
+      },
+      {
+        "name": "Fiord color",
+        "style-url": {
+          "url": "https://tuiles.enliberte.fr/styles/fiord-color.json",
+          "active": false
+        }
+      }
+    ],
+    "coverage": "World",
+    "provider": "Tuiles en Liberté",
+    "attribution": "© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+  },
+  {
+    "name": "OpenStreetMap",
+    "description": "Free vector tiles server open for public use",
+    "server-url": {
+      "url": "https://tiles.versatiles.org/tiles/osm/{z}/{x}/{y}",
+      "active": true
+    },
+    "metadata-url": {
+      "url": "https://docs.versatiles.org/guides/use_tiles.versatiles.org.html",
+      "active": true
+    },
+    "schema": "OpenMapTiles",
+    "styles": [
+      {
+        "name": "Colorful",
+        "style-url": {
+          "url": "https://tiles.versatiles.org/assets/styles/colorful/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Eclipse",
+        "style-url": {
+          "url": "https://tiles.versatiles.org/assets/styles/eclipse/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Greybeard",
+        "style-url": {
+          "url": "https://tiles.versatiles.org/assets/styles/greybeard/style.json",
+          "active": true
+        }
+      },
+      {
+        "name": "Neutrino",
+        "style-url": {
+          "url": "https://tiles.versatiles.org/assets/styles/neutrino/style.json",
+          "active": true
+        }
+      }
+    ],
+    "coverage": "World",
+    "provider": "Versatiles",
+    "attribution": "© <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
   }
 ]
