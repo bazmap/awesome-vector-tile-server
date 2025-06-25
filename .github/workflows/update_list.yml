@@ -30,6 +30,10 @@ jobs:
           python-version: '3.13'
 
 
+      - name: 🐍 Install requirement
+        run: pip install -r "tools/requirement.txt"
+
+
       - name: 🖥️ Check URLs
         run: python "tools/url_validator.py"
 
