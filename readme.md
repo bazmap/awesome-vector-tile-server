@@ -78,7 +78,7 @@ Here is some tools that can be used with verctor tiles :
 
 # 👋 How to contribute
 You have found new servers ? You spotted a mistake ? Feel free to contribute by forking this repo and submitting your PR.
-The curated list is generated from the vector-tile-server-list.json file which is structured as follow :  
+The curated list is generated from the `vector-tile-server-list.json` file which is structured as follow :  
 An array of objects containing these properties :
 - `name` (text) : common name of the ressource
 - `description` (text) : description of the content

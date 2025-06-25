@@ -33,15 +33,15 @@ jobs:
 
 
       - name: 🐍 Install requirement
-        run: pip install -r "tools/requirement.txt"
+        run: pip install -r ".github/scripts/requirement.txt"
 
 
       - name: 🖥️ Check URLs
-        run: python "tools/url_validator.py"
+        run: python ".github/scripts/url_validator.py"
 
 
       - name: 🖥️ Generate new table
-        run: python "tools/list_table_generator.py"
+        run: python ".github/scripts/list_table_generator.py"
 
 
       - name: 💾 Commit new changelog and push files
