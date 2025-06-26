@@ -50,7 +50,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add "readme.md" "vector-tile-server-list.json"
           git status
-          git commit --verbose -m "Action update [skip ci]"
+          git diff-index --quiet --cached HEAD || git commit --verbose -m "Action update [skip ci]"
           git status
           git fetch origin
           git rebase --strategy-option=theirs origin/master --verbose
