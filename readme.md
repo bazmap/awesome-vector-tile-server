@@ -263,7 +263,7 @@ For each link provided, a simple test is done every 24h to check if the link is 
             <td>France métropolitaine et DOM</td>
         </tr>
         <tr>
-            <td>Ifremer  (data.gouv.fr)</td>
+            <td>Ifremer (data.gouv.fr)</td>
             <td>ifremer-atlasdce</td>
             <td><br /><a href='https://openmaptiles.data.gouv.fr/' title='https://openmaptiles.data.gouv.fr/ (url is active)' target='_blank'>Metadata 🟢</a><br />Attribution : <code>data.gouv.fr</code></td>
             <td><a href='https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf' title='Tile server url (url is active)' target='_blank'>https://openmaptiles.data.gouv.fr/data/ifremer-atlasdce/{z}/{x}/{y}.pbf🟢</a></td>
