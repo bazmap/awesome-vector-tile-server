@@ -10,12 +10,11 @@ def validate_urls(data):
 
         for key, value in data.items():
             # URL only in objets stored in a key finishing with "-url"
-            if key.endswith("-url") and isinstance(value, dict):
+            if key in ["server-url", "style-url"] and isinstance(value, dict):
 
                 url = value.get("url")
 
                 if url:
-                    
                     # For URL with https://abc.xyz/{z}/{x}/{y}.yxz format : need to strip the end part
                     url = url.split("{z}/")[0]
                     print("    ", url)
