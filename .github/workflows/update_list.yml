@@ -1,4 +1,4 @@
-name: 🔄 Update vectore tile server list
+name: 🔄 Update vector tile server list
 run-name: ${{ github.workflow }} - ${{ github.actor }}
 
 # Déclenchement lors d'un push sur la branche master qui modifie vector-tile-server-list.json
@@ -10,11 +10,11 @@ on:
     paths:
       - 'vector-tile-server-list.json'
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 2 * * *"
 
 jobs:
   build:
-    name: 🛠️ Update vectore tile server list
+    name: 🛠️ Job 1 - Update vector tile server list
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -50,7 +50,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add "readme.md" "vector-tile-server-list.json"
           git status
-          git commit --verbose -m "Update readme.md and vector-tile-server-list.json [skip ci]"
+          git commit --verbose -m "Action update [skip ci]"
           git status
           git fetch origin
           git rebase --strategy-option=theirs origin/master --verbose

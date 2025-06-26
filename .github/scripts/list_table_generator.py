@@ -140,8 +140,8 @@ if __name__ == "__main__":
     current_directory = os.path.dirname(os.path.abspath(__file__))
 
     # Path to the file
-    list_file = os.path.join(current_directory, '../', list_file)
-    readme_file = os.path.join(current_directory, '../', readme_file)
+    list_file = os.path.join(current_directory, '../../', list_file)
+    readme_file = os.path.join(current_directory, '../../', readme_file)
 
 
 
